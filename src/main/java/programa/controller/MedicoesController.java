@@ -28,7 +28,8 @@ public class MedicoesController {
 		try {
 			medicao = mapper.readValue(mapper.treeAsTokens(nodes), new TypeReference<Medicao>(){});
 			medicao.setDataMedicao(datahora);
-			restTemplate.postForObject(Statics.SERVER+"/auth/medicao/arduino"+ CodArduino, medicao, Medicao.class);
+			String url = Statics.SERVER+"/auth/medicao/arduino/"+ CodArduino;
+			restTemplate.postForObject(url, medicao, Medicao.class);
 		} catch (JsonParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
