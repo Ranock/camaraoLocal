@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: Farm-Shrimp-Local
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: Hugo
+Built-By: Java
 Implementation-Vendor-Id: br.com.unigranrio.Farm-Shrimp-Local
 Build-Jdk: 1.8.0_171
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
